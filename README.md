@@ -9,7 +9,7 @@
 ## General Introduction
 
 In natural sciences cellular automaton plays an important role. It is a very powerful tool to describe highly complex and nonlinear system with a simple set of rules. It is used in a broad spectrum of topics which vary from computer sciences, mathematics, physics, biology to chemistry. The basics of cellular automaton is that a state is changed based on inputs (mostly neighbors) and its previous state.
-A broad spectrum of simulations can be made with the cellular automaton. A very popular, yet very simple application is Conway’s Game of Life, [3]. It is a two-dimensional simulation in which a cell is either alive or dead.
+A broad spectrum of simulations can be made with the cellular automaton. A very popular, yet very simple application is Conway’s Game of Life. It is a two-dimensional simulation in which a cell is either alive or dead.
 To our knowledge there exist only few simulations that are researching the behavior of a two-predator and two-prey environment. This calls for an actual simulation between two predators and two preys.
 
 ## The Model
@@ -32,7 +32,7 @@ Will we either get:
 •	pattern stabilizations into homogeneity?
 •	patterns stabilizing or oscillating?
 •	chaotic pattern evolution?
-•	highly complex structures with local stabilities? (all 4 bullet points from [1].)
+•	highly complex structures with local stabilities?
 How will parameters like food preferences, reproduction or death probability influence population dynamics? Are our results in any way representable by governing population equations or the real world?
 
 ## Expected Results
