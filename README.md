@@ -1,50 +1,65 @@
 # Modeling and Simulation of Social Systems Fall 2018 – Research Plan (Template)
 (text between brackets to be removed)
 
-> * Group Name: (be creative!)
-> * Group participants names: (alphabetically sorted by last name)
-> * Project Title: (can be changed later)
-> * Programming language: (Python or MATLAB)
+> * Group Name: obiglobis
+> * Group participants names: Alexander Bruun, Anton Bruun
+> * Project Title: Two Predators and Two Prey Interactions
+> * Programming language: Python
 
 ## General Introduction
 
-(States your motivation clearly: why is it important / interesting to solve this problem?)
-(Add real-world examples, if any)
-(Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
+In natural sciences cellular automaton plays an important role. It is a very powerful tool to describe highly complex and nonlinear system with a simple set of rules. It is used in a broad spectrum of topics which vary from computer sciences, mathematics, physics, biology to chemistry. The basics of cellular automaton is that a state is changed based on inputs (mostly neighbors) and its previous state.
+A broad spectrum of simulations can be made with the cellular automaton. A very popular, yet very simple application is Conway’s Game of Life, [3]. It is a two-dimensional simulation in which a cell is either alive or dead.
+To our knowledge there exist only few simulations that are researching the behavior of a two-predator and two-prey environment. This calls for an actual simulation between two predators and two preys.
 
 ## The Model
 
-(Define dependent and independent variables you want to study. Say how you want to measure them.) (Why is your model a good abstraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?)
+The parameters we are observing are:
+
+global offspring_chance_table, values_offspring, eat_values
+global death_values
+global cost_reproduction, cost_movement 
+global rules
+global nutrition_level_start, nutrition_value_each_turn
+
+Our model captures the key interactions between large populations and these key interactions can be changed easily through parameter.
+While capturing key interactions they are still not all interactions. One of them is the sense of packs. This can have a strong influence in decrease of a popula-tion since it will be more resistant in most cases to attacks or extinction. The other is a sense for attack and defense so the predators wills not take a decreasing population into account. 
 
 
 ## Fundamental Questions
 
-(At the end of the project you want to find the answer to these questions)
-(Formulate a few, clear questions. Articulate them in sub-questions, from the more general to the more specific. )
-
+Will we either get:
+•	pattern stabilizations into homogeneity?
+•	patterns stabilizing or oscillating?
+•	chaotic pattern evolution?
+•	highly complex structures with local stabilities? (all 4 bullet points from [1].)
+How will parameters like food preferences, reproduction or death probability influence population dynamics? Are our results in any way representable by governing population equations or the real world?
 
 ## Expected Results
 
-(What are the answers to the above questions that you expect to find before starting your research?)
-
+We expect oscillations, overpopulations, extinctions and some sort of gliders.
 
 ## References 
 
-(Add the bibliographic references you intend to use)
-(Explain possible extension to the above models)
-(Code / Projects Reports of the previous year)
-
+[1]	https://en.wikipedia.org/wiki/Cellular_automaton, 09.12.2018.
+[2]	Hiroki Sayama, Introduction to the Modeling and Analysis of Complex Systems.
+ 	Pages 185-225, August 2015.
+[3]	https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life, 09.12.2018.
+[4]	https://en.wikipedia.org/wiki/Wa-Tor, 09.12.2018.
+[5]	Gabriela Kirlinger, Two predators feeding on two prey species: A result on
+ 	permanence, September 1989.
+[6]	Vahidin Hadžiabdić, Midhat Mehuljić and Jasmin Bektešević, Lotka-Volterra
+ 	Model with Two Predators and Their Prey, February 2017.
+[7]	https://en.wikipedia.org/wiki/Wa-Tor, 09.12.2018.
+[8]	Patrick Misteli & Ruben Kälin, Circle Of Life, May 2014.
+[9]	https://en.wikipedia.org/wiki/Lotka–Volterra_equations, 09.12.2018.
+[10]	https://en.wikipedia.org/wiki/Generalized_Lotka–Volterra_equation, 09.12.2018.
 
 ## Research Methods
 
-(Cellular Automata, Agent-Based Model, Continuous Modeling...) (If you are not sure here: 1. Consult your colleagues, 2. ask the teachers, 3. remember that you can change it afterwards)
-
-
-## Other
-
-(mention datasets you are going to use)
+Cellular Automata
 
 # Reproducibility
 
-(step by step instructions to reproduce your results. *Keep in mind that people reading this should accomplish to reproduce your work within 10 minutes. It needs to be self-contained and easy to use*. e.g. git clone URL_PROY; cd URL_PROY; python3 main.py --light_test (#--light test runs in less than 5minutes with up to date hardware)) 
+https://github.com/parisj/project_survival/tree/master/code/Reproducibility%20Guide
 
