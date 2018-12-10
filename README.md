@@ -16,11 +16,11 @@ To our knowledge there exist only few simulations that are researching the behav
 
 The parameters we are observing are:
 
-- global offspring_chance_table, values_offspring, eat_values
-- global death_values
-- global cost_reproduction, cost_movement 
-- global rules
-- global nutrition_level_start, nutrition_value_each_turn
+- global `offspring_chance_table`, `values_offspring`, `eat_values`
+- global `death_values`
+- global `cost_reproduction`, `cost_movement` 
+- global `rules`
+- global `nutrition_level_start`, `nutrition_value_each_turn`
 
 Our model captures the key interactions between large populations and these key interactions can be changed easily through parameter.
 While capturing key interactions they are still not all interactions. One of them is the sense of packs. This can have a strong influence in decrease of a popula-tion since it will be more resistant in most cases to attacks or extinction. The other is a sense for attack and defense so the predators wills not take a decreasing population into account. 
