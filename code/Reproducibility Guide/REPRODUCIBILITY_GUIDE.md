@@ -106,7 +106,7 @@ rules= [[0],[0],[1,3,0,4],[0],[3,1,0,2]]
 population=[0,1,2,3,4]
 
 #Represents the probasbility for an animal to be initialized in the Grid
-probability=[0.7,0.25,0.1,0.2,0.01]
+probability=[0.7,0.25,0.01,0.2,0.01]
 ```
 
 #### What should you get?
